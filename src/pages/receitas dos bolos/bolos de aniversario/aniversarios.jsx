@@ -1,13 +1,11 @@
 import { CardBolos } from "../../../components/cake.card/card";
 import { Aniversario } from "../../../data/dataAniversario";
-import { Header } from "../../../components/header/header";
-import { Footer } from "../../../components/footer/footer";
 
 export const BolosDeAniversario = () => {
     return(
         <>
         <div className="">
-     <Header/>
+     
       <section
         className="min-h-[calc(100vh-100px)] flex justify-between
       "
@@ -18,7 +16,7 @@ export const BolosDeAniversario = () => {
           </h1>
           <hr className="h-[6px] bg-sky-blue-200 rounded-3xl w-32 my-2" />
 
-          <section className="mt-10 grid grid-cols-4 justify-items-center gap-3 ml-80">
+          <section className="mt-10 grid grid-cols-4 justify-items-center gap-3 ml-96">
             {Aniversario.map((bolosAniversario) => {
               return (
                 <CardBolos
@@ -33,7 +31,7 @@ export const BolosDeAniversario = () => {
         </main>
 
       </section>
-      <Footer/>
+    
      
     </div>
         </>
