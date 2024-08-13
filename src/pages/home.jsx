@@ -4,6 +4,7 @@ import { Slider } from "../components/sliders/slider";
 import { BolosDeAniversario } from "./receitas dos bolos/bolos de aniversario/aniversarios";
 import { MagnifyingGlass, CaretDown, Star} from "@phosphor-icons/react";
 import { motion } from "framer-motion";
+import { TopProducts } from "../components/topProducts";
 
 
 export const Home = () => {
@@ -51,15 +52,23 @@ export const Home = () => {
   <p className="flex mr-10">Loja <CaretDown  className="mt-2 ml-2" size={16}/></p>
 </div></div>
 
-   
+<Slider/>
+
+
  
 <div className="flex  mt-10 bg-white rounded-2xl shadow-custom">
   
   <div className=" ml-10  ">
-  <img 
-  className="w-52 h-52 mt-4"
-  src="https://media.istockphoto.com/id/1676097087/photo/pastel-de-tres-leches-three-milk-cake-latin-america-bakery-with-strawberries.webp?s=2048x2048&w=is&k=20&c=3HJQGzEw0qNoFoT8lN9B97I0Soi3Y6pxYmRmujps2jk=" alt="" />
- <div className="flex"> <Star size={25} className="text-yellow-300 flex "/>
+  <div className="flex-1 p-4 md:p-8">
+  <video 
+          src="/videos/bolinho.mp4" // Certifique-se de que este é um vídeo MP4 válido
+          controls
+          autoPlay
+          loop
+          className="w-full h-auto max-w-md mx-auto"
+          style={{ maxWidth: '700px', height: '200px' }}
+        ></video>
+          </div> <div className="flex"> <Star size={25} className="text-yellow-300 flex "/>
   <Star size={25} className="text-yellow-300  "/>
   <Star size={25} className="text-yellow-300  "/>
   <Star size={25} className="text-yellow-300 "/></div>
@@ -145,9 +154,10 @@ export const Home = () => {
       
     
 <h1 className="mt-16 text-4xl text-pink-600 flex justify-center items-center">Veja aqui as nossas melhores receitas</h1>
-   <Slider/>
-    <div className="shadow-custom">
- <BolosDeAniversario/>
+  
+    <div className="shadow-custom mt-10">
+    <TopProducts/>
+    <TopProducts/>
     </div>
     <Footer/>
     </>

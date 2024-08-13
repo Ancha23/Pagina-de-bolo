@@ -6,7 +6,13 @@ export const CardBolos = ({ id, name, category, imageUrl }) => {
         <>
             <div className="bg-white shadow-xl w-[220px] h-[300px] rounded-3xl p-2 mt-20">
                 <figure className="bg-white h-2/5 flex justify-center items-center overflow-hidden ">
-                    <img src={imageUrl} alt="Imagem do produto" className="w-full h-full " />
+                    <img src={imageUrl} alt="Imagem do produto" className="w-full h-full" 
+                    style={{
+                        backgroundSize: "contain",
+                        backgroundPosition: "center",
+                         backgroundRepeat: "no-repeat"
+                      }}
+                    />
                 </figure>
                 <h1 className="text-center font-bold mt-2 mb-1 text-lg">{name}</h1>
 

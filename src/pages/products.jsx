@@ -11,12 +11,12 @@ export const Products = () => {
     return(
         <>
 <Header/>
- <h1 className="font-bold text-center text-6xl py-2 text-sky-blue-200 mt-16 text-lime-400">
+ <h1 className="font-bold text-center text-6xl py-2 text-sky-blue-200 mt-16 text-pink-300">
         Receitas de Bolos
       </h1>
-      <p>É aqui que encontra as nossas melhores receitas de bolos de sempre. De todas as formas e feitios, para todas as ocasiões, experimente!
+      <p className="text-center mt-8 text-2xl font-semibold">É aqui que encontra as nossas melhores receitas de bolos de sempre. De todas as formas e feitios, para todas as ocasiões, experimente!
       </p>
-<div className="flex flex-col max-w-[1400px] m-auto bg-black/10">
+<div className="flex flex-col max-w-[1400px] m-auto">
      
       <div className="flex items-center gap-8 m-auto py-4 font-bold mt-32 mr-20 ml-20 ">
         <Link to={'/bolos caseiros'}>
